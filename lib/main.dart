@@ -10,10 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'RNG',
       theme: ThemeData.dark(),
       home: MyHomePage(),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -73,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 Text(
                   "$_randomNumber",
-                  style: Theme.of(context).textTheme.display4.apply(fontSizeFactor: 1.5, fontWeightDelta: 5),
+                  style: Theme.of(context).textTheme.headline1.apply(fontSizeFactor: 1.5, fontWeightDelta: 5),
                 )
               ],
             )
